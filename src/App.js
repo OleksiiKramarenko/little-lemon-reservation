@@ -1,8 +1,17 @@
+import Header from './Header';
+import Nav from './Nav';
+import Main from './Main';
+import Footer from './Footer';
+
 function App() {
-  return (
-      <div className="App">
-        <h1>Homepage</h1>
-      </div>
-  );
+    return (
+        <>
+            <Header />
+            <Nav />
+            <Main />
+            <Footer />
+        </>
+    );
 }
+
 export default App;
