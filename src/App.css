@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+:root {
+  --primary-color: #495E57;
+  --secondary-color: #F4CE14;
+  --text-color: #333;
+  --font-main: 'Poppins', sans-serif;
+  --border-radius: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h2 {
+  font-size: 2rem;
+  font-weight: semi-bold;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+
+nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
   color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:hover {
+  color: var(--secondary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
