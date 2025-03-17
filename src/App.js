@@ -1,18 +1,21 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav";
-import HomePage from "./components/HomePage";
-import BookingPage from "./components/BookingPage";
+import React from 'react';
+import './App.css';
+import Nav from "./components/Nav"
+import Main from "./components/Main"
+import Menu from './components/Menu';
+import Footer from './components/Footer';
+
 
 function App() {
-    return (
-        <Router>
-            <Nav />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/booking" element={<BookingPage />} />
-            </Routes>
-        </Router>
-    );
+  return (
+ 
+    <>
+      <Nav/>
+      <Main />
+      <Menu/>
+      <Footer/>
+    </>
+  );
 }
 
 export default App;
